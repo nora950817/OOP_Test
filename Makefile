@@ -12,7 +12,7 @@ SRCS = $(wildcard $(SRCDIR)/*.cpp)
 OBJS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SRCS))
 
 # Name of the executable
-TARGET = OOP_Lab7
+TARGET = Lab07
 
 all: $(TARGET)
 

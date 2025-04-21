@@ -2,18 +2,18 @@
 #define CYLINDER_CPP
 
 #include "Cylinder.h"
-#include <iomanip>  
+double pi = M_PI;
 
 double Cylinder::SurfaceArea() {
-    return 2 * 3.1415 * radius * (radius + height);
+    return 2 * pi * radius * (radius + height);
 }
 
 double Cylinder::Volume() {
-    return 3.1415 * radius * radius * height;
+    return pi * radius * radius * height;
 }
 
 double Cylinder::Circumference() {
-    return 4 * 3.1415 * radius;
+    return  2 * pi * radius;
 }
 
 istream& operator>>(istream& in, Cylinder& cldr) {
@@ -25,7 +25,7 @@ ostream& operator<<(ostream& out, Cylinder& cldr) {
     out << fixed << setprecision(3);
     out << "Circumference: " << cldr.Circumference() << endl;
     out << "SurfaceArea: " << cldr.SurfaceArea() << endl;
-    out << "Volume: " << cldr.Volume();
+    out << "Volume: " << cldr.Volume() << endl;
     return out;
 }
 
