@@ -5,7 +5,7 @@
 double pi = M_PI;
 
 double Cylinder::SurfaceArea() {
-    return 2 * pi * radius * (radius + height);
+    return 2.0 * pi * radius * (radius + height);
 }
 
 double Cylinder::Volume() {
